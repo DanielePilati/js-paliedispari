@@ -2,7 +2,7 @@
 
 //Chiedere all’utente di inserire una parola
 
-const userWord = prompt("scrivi una parola");
+const userWord = prompt("scrivi una parola o una frase");
 
 if (isPalindrom(userWord)) {
   alert("è una frase palindroma");
