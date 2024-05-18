@@ -13,9 +13,9 @@ if (isPalindrom(userWord)) {
 // Creare una funzione per capire se la parola inserita è palindroma
 
 function isPalindrom(word) {
-  word = word.toLowerCase();
-  const characters = word.split("");
-  const reverseWord = [...characters];
-  reverseWord.reverse();
-  return characters.join("") === reverseWord.join("");
+  word = word.toLowerCase(); // trasformo la parola in lowercase
+  const characters = word.split(""); // prendo la parola e la metto in un array
+  const reverseWord = [...characters]; // copio l'array
+  reverseWord.reverse(); //lo giro tramite il metodo .reverse()
+  return characters.join("") === reverseWord.join(""); // ritorna il confronto tra i due array
 }
