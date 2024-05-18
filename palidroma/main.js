@@ -13,7 +13,6 @@ if (isPalindrom(userWord)) {
 // Creare una funzione per capire se la parola inserita è palindroma
 
 function isPalindrom(word) {
-  debugger;
   word = word.toLowerCase();
   const characters = word.split("");
   const reverseWord = [...characters];
