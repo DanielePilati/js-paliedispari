@@ -1,5 +1,4 @@
 "use strict";
-debugger;
 // L’utente sceglie pari o dispari e inserisce un numero da 1 a 5.
 const userNum = Number(prompt("inserisci un numero tra 1 e 5")); //chiedo in inputo un numero da 1 a 5
 let userChoice = prompt('scegli "pari" o "dispari"'); // e di scegliere tra pari e dispari
@@ -18,9 +17,9 @@ if (userChoice === "pari") {
 } else {
   alert('inserisci la parola "pari" o "dispari" correttamente');
 }
+
 // uso una funzione per verificare chi ha vinto
 function whoWin(num, check) {
-  debugger;
   if (evenOdd(num) === check) {
     alert("you win");
   } else {
@@ -30,11 +29,9 @@ function whoWin(num, check) {
 
 // Stabiliamo se la somma dei due numeri è pari o dispari (usando una funzione)
 function evenOdd(num) {
-  debugger;
   return num % 2 === 0;
 }
 // Generiamo un numero random (sempre da 1 a 5) per il computer (usando una funzione).
 function getRandomArbitrary(min, max) {
-  debugger;
   return Math.random() * (max - min) + min;
 }
