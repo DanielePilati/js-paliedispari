@@ -6,8 +6,9 @@ let userChoice = prompt('scegli "pari" o "dispari"'); // e di scegliere tra pari
 userChoice = userChoice.toLowerCase();
 let check = null;
 let sum = parseInt(userNum + getRandomArbitrary(1, 5)); // Sommiamo i due numeri
-// Dichiariamo chi ha vinto.
 
+// Dichiariamo chi ha vinto.
+//verifico se l'utente ha messo pari o dispari
 if (userChoice === "pari") {
   check = true;
   whoWin(sum, check);
@@ -17,7 +18,7 @@ if (userChoice === "pari") {
 } else {
   alert('inserisci la parola "pari" o "dispari" correttamente');
 }
-
+// uso una funzione per verificare chi ha vinto
 function whoWin(num, check) {
   debugger;
   if (evenOdd(num) === check) {
