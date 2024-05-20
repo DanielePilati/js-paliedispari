@@ -4,7 +4,7 @@ const userNum = Number(prompt("inserisci un numero tra 1 e 5")); //chiedo in inp
 let userChoice = prompt('scegli "pari" o "dispari"'); // e di scegliere tra pari e dispari
 userChoice = userChoice.toLowerCase();
 let check = null;
-let sum = parseInt(userNum + getRandomArbitrary(1, 5)); // Sommiamo i due numeri
+let sum = Math.floor(userNum + getRandomArbitrary(1, 5)); // Sommiamo i due numeri
 
 // Dichiariamo chi ha vinto.
 //verifico se l'utente ha messo pari o dispari
